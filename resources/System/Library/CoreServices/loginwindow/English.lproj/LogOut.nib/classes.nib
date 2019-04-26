@@ -1,0 +1,33 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LWLogoutIcon; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = LWLogoutView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {updateCountDown = id; }; 
+            CLASS = LWLogoutWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mCountDownPercent = NSTextField; 
+                mCountDownText = NSTextField; 
+                mView = LWLogoutView; 
+            }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {
+            ACTIONS = {cancel = id; logout = id; }; 
+            CLASS = LogOutAlert; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                defaultButton = NSButton; 
+                guestAccountMessageField = NSTextField; 
+                logoutImageView = NSImageView; 
+                logoutMessageField = NSTextField; 
+                logoutPanel = NSWindow; 
+                logoutTimedOutField = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

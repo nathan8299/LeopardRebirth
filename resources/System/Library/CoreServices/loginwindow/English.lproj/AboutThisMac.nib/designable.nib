@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1050" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="AboutThisMacController">
+            <connections>
+                <outlet property="aboutMacPanel" destination="82" id="85"/>
+                <outlet property="buildField" destination="189" id="190"/>
+                <outlet property="copyrightField" destination="79" id="127"/>
+                <outlet property="l3CacheField" destination="181" id="182"/>
+                <outlet property="launchingProfilerProgress" destination="157" id="158"/>
+                <outlet property="launchingProfilerTextField" destination="151" id="153"/>
+                <outlet property="launchingSoftwareUpdateProgress" destination="162" id="163"/>
+                <outlet property="launchingSoftwareUpdateTextField" destination="164" id="165"/>
+                <outlet property="memoryField" destination="80" id="91"/>
+                <outlet property="memoryLabel" destination="174" id="177"/>
+                <outlet property="moreInfoButton" destination="147" id="150"/>
+                <outlet property="osBrandImage" destination="76" id="128"/>
+                <outlet property="processorField" destination="81" id="92"/>
+                <outlet property="processorLabel" destination="173" id="176"/>
+                <outlet property="softwareUpdateButton" destination="159" id="161"/>
+                <outlet property="startupDiskField" destination="193" id="195"/>
+                <outlet property="startupDiskLabel" destination="192" id="194"/>
+                <outlet property="topHalfGroupView" destination="183" id="184"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="About This Mac" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="82" userLabel="About This Mac" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" nonactivatingPanel="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="412" y="487" width="578" height="339"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <value key="minSize" type="size" width="213" height="113"/>
+            <view key="contentView" id="84">
+                <rect key="frame" x="0.0" y="0.0" width="578" height="339"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="151">
+                        <rect key="frame" x="29" y="46" width="273" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Opening %@…" id="306">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="147">
+                        <rect key="frame" x="271" y="65" width="133" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="System Report..." bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="305">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="moreInfoClicked:" target="-2" id="149"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="79">
+                        <rect key="frame" x="77" y="-6" width="307" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="TM &amp; ©" id="304">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" white="0.0" alpha="0.60000001999999997" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="157">
+                        <rect key="frame" x="107" y="67" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    </progressIndicator>
+                    <customView id="183">
+                        <rect key="frame" x="251" y="217" width="307" height="84"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="189" customClass="ToggleTextField">
+                                <rect key="frame" x="17" y="20" width="307" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; Version - do not localize &gt;&gt;" id="310">
+                                    <font key="font" metaFont="cellTitle"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.38043481000000001" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="toggleBuildField:" target="-2" id="191"/>
+                                </connections>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="214" userLabel="Name">
+                                <rect key="frame" x="95" y="37" width="72" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Mojave" id="312">
+                                    <font key="font" size="22" name="HelveticaNeue-Light"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="212">
+                                <rect key="frame" x="17" y="37" width="82" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="macOS" id="311">
+                                    <font key="font" size="22" name="HelveticaNeue"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <textField verticalHuggingPriority="750" id="188">
+                        <rect key="frame" x="0.0" y="-25" width="307" height="13"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="All Rights Reserved." id="313">
+                            <font key="font" metaFont="label"/>
+                            <color key="textColor" white="0.0" alpha="0.60000001999999997" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="159">
+                        <rect key="frame" x="402" y="65" width="133" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Software Update..." bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" inset="2" id="307">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="softwareUpdateClicked:" target="-2" id="160"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="164">
+                        <rect key="frame" x="49" y="48" width="236" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Opening %@…" id="308">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="162">
+                        <rect key="frame" x="107" y="67" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                    </progressIndicator>
+                    <imageView id="76" customClass="NoDragImageView">
+                        <rect key="frame" x="0.0" y="-4" width="261" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" image="MacOSX" id="303"/>
+                    </imageView>
+                    <customView id="217">
+                        <rect key="frame" x="269" y="97" width="269" height="88"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="174">
+                                <rect key="frame" x="-3" y="44" width="72" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Memory" id="317">
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="181">
+                                <rect key="frame" x="76" y="5" width="171" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; Cache - do not localize &gt;&gt;" id="318">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="193">
+                                <rect key="frame" x="76" y="22" width="203" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; StartupDisk - do not localize &gt;&gt;" id="319">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="80">
+                                <rect key="frame" x="76" y="38" width="181" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; Memory - do not localize &gt;&gt;" id="315">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" id="81">
+                                <rect key="frame" x="76" y="55" width="190" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; Processor - do not localize &gt;&gt;" id="316">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </customView>
+                    <textField verticalHuggingPriority="750" id="218">
+                        <rect key="frame" x="270" y="156" width="71" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Processor" id="320">
+                            <font key="font" metaFont="systemBold" size="12"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="220">
+                        <rect key="frame" x="270" y="137" width="71" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Memory" id="321">
+                            <font key="font" metaFont="systemBold" size="12"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="173">
+                        <rect key="frame" x="266" y="140" width="72" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Processor" id="309">
+                            <font key="font" metaFont="smallSystemBold"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="192">
+                        <rect key="frame" x="266" y="140" width="75" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Startup Disk" id="314">
+                            <font key="font" metaFont="smallSystemBold"/>
+                            <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="224">
+                        <rect key="frame" x="271" y="119" width="81" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Startup Disk" id="322">
+                            <font key="font" metaFont="systemBold" size="12"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="226">
+                        <rect key="frame" x="17" y="3" width="527" height="14"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="TM &amp; © 1983-2011 Apple inc. All Rights Reserved. LeopardRebirth Theme." id="323">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.57999997999999997" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="85" y="147.5"/>
+        </window>
+        <textFieldCell lineBreakMode="truncatingMiddle" sendsActionOnEndEditing="YES" alignment="left" title="&lt;&lt; Processor - do not localize &gt;&gt;" id="324">
+            <font key="font" metaFont="smallSystem"/>
+            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+        </textFieldCell>
+    </objects>
+    <resources>
+        <image name="MacOSX" width="128" height="128"/>
+    </resources>
+</document>

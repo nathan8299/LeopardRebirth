@@ -1,0 +1,31 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                cancelLogout = id; 
+                continueLogout = id; 
+                sheetCancelButtonClicked = id; 
+                sheetForceQuitButtonClicked = id; 
+            }; 
+            CLASS = TimedOutPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_cancelButton" = NSButton; 
+                "_cancelConfirmationButton" = NSButton; 
+                "_confirmationIconView" = NSImageView; 
+                "_confirmationInfoTextField" = NSTextField; 
+                "_confirmationMessageTextField" = NSTextField; 
+                "_confirmationPanel" = NSPanel; 
+                "_continueButton" = NSButton; 
+                "_forceQuitButton" = NSButton; 
+                "_iconView" = NSImageView; 
+                "_infoTextField" = NSTextField; 
+                "_messageTextField" = NSTextField; 
+                timedOutPanel = NSPanel; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

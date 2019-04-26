@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {cancel = id; doDefaultAction = id; restart = id; sleep = id; }; 
+            CLASS = ShutDownAlert; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_alertImageView" = NSImageView; 
+                "_defaultButton" = NSButton; 
+                "_guestAccountMessageField" = NSTextField; 
+                "_infoText" = NSTextField; 
+                "_restartButton" = NSButton; 
+                "_sleepButton" = NSButton; 
+                "_timedOutField" = NSTextField; 
+                shutdownPanel = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,38 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                buttonClicked = id; 
+                cancelClicked = id; 
+                changeProcess = id; 
+                forceQuit = id; 
+                makeProcessFrontmost = id; 
+                pauseResume = id; 
+                reloadData = id; 
+                sheetCancelButtonClicked = id; 
+                sheetForceQuitButtonClicked = id; 
+            }; 
+            CLASS = ProcessPanel; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_badgedIconView" = NSImageView; 
+                "_confirmForceQuitButton" = NSButton; 
+                "_confirmationInfoTextField" = NSTextField; 
+                "_confirmationMessageTextField" = NSTextField; 
+                "_confirmationPanel" = NSPanel; 
+                "_infoTextField" = NSTextField; 
+                "_loMemIconView" = NSImageView; 
+                "_loMemPanel" = NSPanel; 
+                "_loMemView" = NSBox; 
+                "_messageTextField" = NSTextField; 
+                "_pauseResumeButton" = NSButton; 
+                forceQuitButton = NSButton; 
+                panel = NSPanel; 
+                processTable = NSTableView; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
